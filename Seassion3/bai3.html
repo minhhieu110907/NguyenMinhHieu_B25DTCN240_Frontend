@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This is Hieu's page</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+
+    <div>
+      <label for="username">Họ tên:</label>
+      <input type="text" id="username" name="username" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="dob">Ngày sinh:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br>
+    </div>
+
+    <div>
+      <label>Giới tính:</label>
+      <label>
+        <input type="radio" name="gender" value="Male" required> Nam
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female"> Nữ
+      </label>
+      <br>
+    </div>
+
+    <div>
+      <label for="telephone">Số điện thoại:</label>
+      <input type="tel" id="telephone" name="telephone" placeholder="0123456789" pattern="0[0-9]{9}" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="major">Chuyên ngành:</label>
+      <input type="text" id="major" name="major" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="enrollment_year">Năm nhập học:</label>
+      <input type="number" id="enrollment_year" name="enrollment_year" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="gpa">Điểm GPA:</label>
+      <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.1" required />
+      <br>
+    </div>
+
+    <div>
+      <label for="address">Địa chỉ:</label>
+      <textarea id="address" name="address" rows="3" cols="30"></textarea>
+      <br>
+    </div>
+
+    <div>
+      <label for="class">Lớp học:</label>
+      <select id="class" name="class">
+        <option value="Lớp 1">Lớp 1</option>
+        <option value="Lớp 2">Lớp 2</option>
+        <option value="Lớp 3">Lớp 3</option>
+        <option value="Lớp 4">Lớp 4</option>
+        <option value="Lớp 5">Lớp 5</option>
+        <option value="Lớp 6">Lớp 6</option>
+        <option value="Lớp 7">Lớp 7</option>
+        <option value="Lớp 8">Lớp 8</option>
+        <option value="Lớp 9">Lớp 9</option>
+      </select>
+      <br>
+    </div>
+
+    <div>
+      <label for="enroll_day">Ngày đăng ký học:</label>
+      <input type="date" id="enroll_day" name="enroll_day" required />
+      <br>
+    </div>
+
+    <div>
+      <input type="submit" value="Đăng ký" />
+    </div>
+
+  </form>
+</body>
+
+</html>

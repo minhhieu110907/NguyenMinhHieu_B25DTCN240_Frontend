@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This is Hieu's page</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <div>
+      <label for="full_name">Họ và tên:</label>
+      <input type="text" id="full_name" name="full_name" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="dob">Ngày sinh:</label>
+      <input type="date" id="dob" name="dob" required>
+      <br>
+    </div>
+
+    <div>
+      <label>Giới tính:</label>
+      <input type="radio" name="gender" value="Male" required> Nam
+      <input type="radio" name="gender" value="Female">
+      <br>
+    </div>
+
+    <div>
+      <label for="identity_number">Số CCCD:</label>
+      <input type="number" id="identity_number" name="identity_number" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="date_of_issue">Ngày cấp:</label>
+      <input type="date" id="date_of_issue" name="date_of_issue" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="place_of_issue">Nơi cấp:</label>
+      <input type="text" id="place_of_issue" name="place_of_issue" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="0[0-9]{9}" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+    </div>
+
+    <div>
+      <label for="address_permanent">Địa chỉ thường trú:</label>
+      <textarea id="address_permanent" name="address_permanent" rows="4" cols="30"></textarea>
+      <br>
+    </div>
+
+    <div>
+      <label for="address_temporary">Địa chỉ tạm trú:</label>
+      <textarea id="address_temporary" name="address_temporary" rows="4" cols="30"></textarea>
+      <br>
+    </div>
+
+    <div>
+      <label>Loại căn cước:</label>
+      <input type="radio" name="identity_type" value="Căn cước công dân mới" required> Căn cước công dân mới
+      <input type="radio" name="identity_type" value="Căn cước công dân mới"> Căn cước công dân cũ
+      <br>
+    </div>
+
+    <div>
+      <label for="ethnic">Dân tộc:</label>
+      <input type="text" id="ethnic" name="ethnic">
+      <br>
+    </div>
+
+    <div>
+      <label for="religion">Tôn giáo:</label>
+      <input type="text" id="religion" name="religion">
+      <br>
+    </div>
+
+    <div>
+      <label for="nationality">Quốc tịch:</label>
+      <input type="text" id="nationality" name="nationality" value="Việt Nam" readonly>
+      <br>
+    </div>
+
+    <div>
+      <label for="parent_name">Họ tên phụ huynh:</label>
+      <input type="text" id="parent_name" name="parent_name">
+      <br>
+    </div>
+
+    <div>
+      <label for="parent_identity">CCCD phụ huynh:</label>
+      <input type="number" id="parent_identity" name="parent_identity">
+      <br>
+    </div>
+
+    <div> <label>Tỉnh/Thành phố:</label>
+      <select name="city" id="city">
+        <option selected>Chọn Tỉnh/Thành phố</option>
+        <option value="Hanoi">Hà Nội</option>
+        <option value="HoChiMinh">Hồ Chí Minh</option>
+        <option value="HaiPhong">Hải Phòng</option>
+        <option value="DaNang">Đà Nẵng</option>
+        <option value="CanTho">Cần Thơ</option>
+        <option value="Hue">Huế</option>
+        <option value="CaoBang">Cao Bằng</option>
+        <option value="LangSon">Lạng Sơn</option>
+        <option value="LaiChau">Lai Châu</option>
+        <option value="DienBien">Điện Biên</option>
+        <option value="SonLa">Sơn La</option>
+        <option value="ThanhHoa">Thanh Hóa</option>
+        <option value="NgheAn">Nghệ An</option>
+        <option value="HaTinh">Hà Tĩnh</option>
+        <option value="TuyenQuang">Tuyên Quang</option>
+        <option value="LaoCai">Lào Cai</option>
+        <option value="ThaiNguyen">Thái Nguyên</option>
+        <option value="PhuTho">Phú Thọ</option>
+        <option value="BacNinh">Bắc Ninh</option>
+        <option value="HungYen">Hưng Yên</option>
+        <option value="NinhBinh">Ninh Bình</option>
+        <option value="QuangNinh">Quảng Ninh</option>
+        <option value="QuangTri">Quảng Trị</option>
+        <option value="QuangNgai">Quảng Ngãi</option>
+        <option value="GiaLai">Gia Lai</option>
+        <option value="KhanhHoa">Khánh Hòa</option>
+        <option value="LamDong">Lâm Đồng</option>
+        <option value="DakLak">Đắk Lắk</option>
+        <option value="DongNai">Đồng Nai</option>
+        <option value="TayNinh">Tây Ninh</option>
+        <option value="VinhLong">Vĩnh Long</option>
+        <option value="DongThap">Đồng Tháp</option>
+        <option value="CaMau">Cà Mau</option>
+        <option value="AnGiang">An Giang</option>
+      </select>
+      <br>
+    </div>
+
+    <input type="submit" value="Gửi thông tin" required />
+  </form>
+</body>
+
+</html>

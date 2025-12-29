@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is Hieu's page</title>
-  </head>
-  <body>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Form Đặt Lịch Tư Vấn Học Tập</legend>
-        <label for="Email">Email của bạn:</label>
-        <input type="email" id="Email" placeholder="minhhieu1109@gmail.com" />
-        <br />
-        <p>
-          Chọn loại thông báo:
-          <label for="news">Tin tức mới</label>
-          <input type="checkbox" name="news" id="news" />
 
-          <label for="events">Sự kiện sinh viên</label>
-          <input type="checkbox" name="events" id="events" />
-          <br />
-          <button type="submit">Đăng kí</button>
-        </p>
-      </fieldset>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This is Hieu's page</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Form Đặt Lịch Tư Vấn Học Tập</legend>
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" placeholder="Nguyễn Minh Hiếu" />
+      <br>
+
+      <label for="time">Chọn ngày giờ:</label>
+      <input type="datetime-local" id="time" />
+      <br>
+
+      <label>Loại dịch vụ</label>
+      <select name="service">
+        <option value="Tư vấn học tập">Tư vấn học tập</option>
+        <option value="Hướng nghiệp">Hướng nghiệp</option>
+      </select>
+      <br>
+
+      <label for="Note">Ghi chú</label>
+      <textarea name="Note" id="Note" rows="5" cols="30"></textarea>
+      <br>
+
+      <button type="submit">Đặt lịch</button>
+    </fieldset>
+  </form>
+</body>
+
 </html>
