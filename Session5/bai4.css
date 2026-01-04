@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f4f4f9;
+    line-height:1;
+}
+
+h2 {
+    color:  #1e90ff;
+    text-align: center;
+}
+
+.contact {
+    text-align: left;
+}
+
+.highlights {
+    font-weight: bold;
+}

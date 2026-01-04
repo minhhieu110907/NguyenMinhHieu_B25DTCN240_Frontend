@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+/* TIÊU ĐỀ CHÍNH */
+h1 {
+    color: #1e90ff;
+    margin: 30px 0 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #1e90ff;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.clinic-image img {
+    width: 420px;
+    max-width: 90%;
+}
+
+/* hover ảnh */
+.clinic-image img:hover {
+    background-color: #e6f7ff;
+}
+
+/* ===== TIÊU ĐỀ PHẦN ===== */
+.section-title {
+    color: #1e90ff;
+    font-size: 22px;
+}
+
+/* ===== DANH SÁCH CƠ SỞ ===== */
+.locations {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.locations li.color {
+    color: red;
+}
+
+.locations li {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* gạch chân cơ sở 3 */
+.locations li.underline {
+    text-decoration: underline;
+}
+
+/* in đậm cơ sở 4 */
+.locations li.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.service {
+    text-align: center;
+}
+
+.service h2 {
+    color: #1e90ff;
+}
+
+.detail {
+    text-align: left;
+}
+
+.service_implant {
+    text-decoration: underline line-through;
+}
+
+.service_orthodontic {
+    font-weight: bold;
+}
+
+.service_treatment{
+    letter-spacing: 2px;
+}
+
+main {
+    background-color:#f4f4f9;
+}

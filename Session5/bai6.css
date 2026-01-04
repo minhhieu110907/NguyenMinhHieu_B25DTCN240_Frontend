@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+h2 {
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+/* Thẻ bác sĩ */
+.doctor-card {
+    background-color: #f0faff;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Ảnh bác sĩ */
+.doctor-card img {
+    width: 200px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+/* Hover ảnh */
+.doctor-card img:hover {
+    background-color: #e6f7ff;
+}
+
+/* Tên bác sĩ */
+.doctor-card h3 {
+    color: #1e90ff;
+    margin-top: 15px;
+}
+
+/* Chuyên khoa */
+.specialty {
+    color: #555;
+}
+
+/* Dịch vụ */
+.services p {
+    margin: 8px 0;
+}
