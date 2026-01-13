@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Hieu's page</title>
+    <link rel="stylesheet" href="./bai7.css">
+</head>
+
+<body>
+    <form action="#" method="post" class="form">
+        <fieldset>
+            <legend> Biểu Mẫu Feedback Phòng Khám Nha Khoa</legend>
+
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" placeholder="Nhập họ tên" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="used-service">Dịch vụ đã sử dụng</label>
+                <select name="used-service" id="used-service">
+                    <option value="general-checkup" selected>Khám răng tổng quát</option>
+                    <option value="teeth-whitening">Tẩy trắng răng thẩm mỹ</option>
+                    <option value="wisdom-tooth-extraction">Nhổ răng khôn</option>
+                    <option value="braces-orthodontics">Niềng răng thẩm mỹ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction-level">Mức độ hài lòng</label>
+                <select name="satisfaction-level" id="satisfaction-level">
+                    <option value="very-satisfied" selected >Rất hài lòng</option>
+                    <option value="satisfied">Hài lòng</option>
+                    <option value="neutral">Bình thường</option>
+                    <option value="disatisfied">Không hài lòng</option>
+                    <option value="very-disatisfied">Rất không hài lòng</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback-content">Nội dung phản hồi</label>
+                <textarea name="feedback-content" id="feedback-content" rows="5" cols="30" placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..."></textarea>
+            </div>
+
+            <div class="button-box">
+                <button type="submit">Gửi feedback</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

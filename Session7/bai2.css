@@ -1,0 +1,13 @@
+*{ 
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; 
+}
+
+.service-card {
+    border: 2px solid #1eff29 ;
+    width: 300px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+    border-radius: 10px;
+}

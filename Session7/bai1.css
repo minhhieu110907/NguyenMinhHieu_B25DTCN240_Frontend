@@ -1,0 +1,36 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; 
+}
+
+.banner {
+    border: 1px solid black;
+    height: 150px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.banner-top, .banner-bottom {
+    display: flex;
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+    width: 100%;
+}
+
+.banner-top {
+    background: #00FFFF;
+    flex: 3;           
+    margin-top: 5px;  
+}
+
+.banner-bottom {
+    flex: 1;          
+}
+
+/* Style chữ */
+h1 { 
+    font-size: 24px; 
+}
+
+span {
+    text-decoration: underline dotted; 
+}

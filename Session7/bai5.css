@@ -1,0 +1,85 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Cursive, Arial, sans-serif; 
+}
+
+body {
+    margin: 0;
+    display: flex;      
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    background-color: pink;
+}
+
+.layout {
+    padding: 15px;
+    min-width: 400px;
+    background-color: rgb(244, 247, 246);
+    border: 1px solid #ccc ;
+    display: flex; 
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+}
+
+.card {
+    border: 1px solid #ccc ;
+    background-color: white;
+    padding-bottom: 20px;
+    width: 300px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+    border-radius: 15px;
+    position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: red;
+  color: white;
+  font-size: 7px;
+  font-weight: bold;
+  border-radius: 999px;
+}
+
+.card h3 {
+    background-color: aqua;
+    width: 300px;
+    text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul:first-child {
+    padding-top: 15px;
+}
+
+ul:last-child {
+    padding-bottom: 20px;
+}
+li > span {
+    color: #05f511;
+}
+
+button {
+    background-color: rgb(5, 219, 219);
+    padding: 14px 48px;   
+    cursor: pointer;
+    border-radius: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+
+}

@@ -1,0 +1,38 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;
+}
+
+.service-card {
+    margin-left:450px;
+    margin-top: 100px;
+    background-color: rgb(244, 247, 246);
+    border: 1px solid #ccc ;
+    height: 200px;
+    width: 850px;
+    display: flex; 
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+    gap: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.service-card h3 {
+    color: #64acf5;
+}
+
+.Braces , .dental-implant , .routine-dental-check-up {
+    border: 1px solid #ccc ;
+    width: 250px;
+    height: 100px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Giữa ngang */
+    align-items: center;     /* Giữa dọc */
+    border-radius: 10px;
+    background-color: white;
+}
+
+p {
+    text-align: center;
+}

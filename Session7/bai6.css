@@ -1,0 +1,75 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.layout {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #f0f0f0;
+    /* Thông số: Lệch 0, xuống 10px, mờ 30px, màu đen trong suốt 5% */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    width: fit-content;
+    min-width: 400px;
+}
+
+.service-introduction {
+    margin-bottom: 20px;
+    display: flex;         
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.service-introduction h4 {
+    font-size: 20px;
+    color: #333;
+    padding-left: 0px;
+}
+
+.badge {
+    background-color: #fef3e2; 
+    color: #f39c12;          
+    padding: 5px 15px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;      /* Đảm bảo chữ không bị xuống dòng */
+}
+
+li {
+    list-style: none;
+    margin-left: 0px;
+}
+
+/* 1. Cái hộp nền */
+.progress-container {
+    width: 100%;            
+    height: 10px;            
+    background-color: #eee;  
+    border-radius: 999px;    
+    margin: 15px 0;        
+    overflow: hidden;    
+}
+
+/* 2. Thanh chạy (xanh lá) */
+.progress-bar {
+    width: 75%;              
+    height: 100%;            
+    background-color: #2ecc71; 
+    border-radius: 999px;  
+    transition: 2.5s ease-in; 
+}
+
+.schedule ul li {
+    opacity: 0.6;
+}
