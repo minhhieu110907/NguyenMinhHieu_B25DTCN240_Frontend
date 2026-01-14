@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: 17px;
 }
 
 body {
@@ -42,12 +43,19 @@ h1 {
     margin-bottom: 15px;
 }
 
+h2 { 
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
 header h1 ~ p {
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-a {
+section a {
     text-decoration: none;
     color: white;
 }
@@ -73,7 +81,7 @@ a {
     background-color: #063d91;
 }
 
-.stat1, .stat2, .stat3 {
+.stat {
     display: flex;
     flex-direction: column;
     padding: 20px 25px; 
@@ -84,16 +92,20 @@ a {
     width: 220px; 
 }
 
-.stat1 p, .stat2 p, .stat3 p {
+.stat p {
     margin: 0; 
     font-size: 30px;  
     font-weight: bold;
 }
 
-.stat1 span, .stat2 span, .stat3 span {
+.stat span {
     font-size: 15px;
     opacity: 0.8;     
     margin-top: 5px;    /* Khoảng cách giữa số và chữ */
+}
+
+.stat:hover {
+    transform: translateY(-5px);
 }
 
 main h2 {
@@ -104,8 +116,8 @@ main p {
     margin-bottom: 50px;;
 }
 
-h3 {
-    margin-bottom: 20px;
+.service-card h3, .service-card p {
+    margin-bottom: 10px;
 }
 
 .service-card {
@@ -113,7 +125,7 @@ h3 {
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.05); 
     border-radius: 20px;
-    padding: 30px;
+    padding:30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
@@ -134,4 +146,12 @@ h3 {
     color: rgb(7, 104, 231);
     border-radius: 999px;
     padding: 5px 10px;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 13px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: rgb(7, 104, 231);
 }
