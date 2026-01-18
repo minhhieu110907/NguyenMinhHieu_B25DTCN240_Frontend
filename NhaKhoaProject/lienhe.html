@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Nha Khoa Nụ Cười Xinh</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showDirection(type, element) {
+            // Ẩn tất cả các nội dung
+            const contents = document.querySelectorAll('.direction-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Ẩn tất cả các tab
+            const tabs = document.querySelectorAll('.direction-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Hiển thị nội dung được chọn
+            document.getElementById(type + '-direction').classList.add('active');
+            element.classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Nha Khoa Nụ Cười Xinh</div>
+            <div class="contact-info">
+                <span>📞 Hotline: 1900 1234</span>
+                <span>📧 Email: info@nhakhoa.com</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="dichvu.html">Dịch vụ</a></li>
+                <li><a href="bacsi.html">Đội ngũ bác sĩ</a></li>
+                <li><a href="dangky.html">Đăng ký khám</a></li>
+                <li><a href="lienhe.html" class="active">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Liên Hệ Với Chúng Tôi</h1>
+            <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="container">
+        <h2 class="section-title">Thông Tin Liên Hệ</h2>
+        <div class="contact-info-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Địa chỉ</h3>
+                <p>123 Đường Nguyễn Văn Linh<br>Phường Tân Phong, Quận 7<br>TP. Hồ Chí Minh</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Hotline</h3>
+                <p>1900 1234<br>(Miễn phí cuộc gọi)</p>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #888;">
+                    Hoặc: 0901 234 567
+                </p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>info@nhakhoa.com<br>support@nhakhoa.com</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🕐</div>
+                <h3>Giờ làm việc</h3>
+                <p>Thứ 2 - Chủ nhật<br>8:00 - 20:00</p>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: #888;">
+                    Nghỉ các ngày lễ lớn
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <h2 class="section-title" style="margin-top: 60px;">Gửi Tin Nhắn Cho Chúng Tôi</h2>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="contact-name">Họ và tên *</label>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-phone">Số điện thoại *</label>
+                    <input type="tel" id="contact-phone" name="contact-phone" placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-subject">Chủ đề *</label>
+                    <select id="contact-subject" name="contact-subject" required>
+                        <option value="">-- Chọn chủ đề --</option>
+                        <option value="tu-van">Tư vấn dịch vụ</option>
+                        <option value="dat-lich">Đặt lịch khám</option>
+                        <option value="gop-y">Góp ý - Phản hồi</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Nội dung tin nhắn *</label>
+                    <textarea id="contact-message" name="contact-message" placeholder="Nhập nội dung tin nhắn của bạn..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+            </form>
+        </div>
+
+        <!-- Map -->
+        <h2 class="section-title" style="margin-top: 60px;">Bản Đồ</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.231478123456!2d106.729456!3d10.729567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a8d19e4c1%3A0x0!2zMTIzIE5ndXnhu4VuIFbEg24gTGluaCwgVMOibiBQaG9uZywgUXXhuq1uIDcsIFRow6BuaCBwaOG7kSBI4buTIQ!5e0!3m2!1svi!2s!4v1234567890123!5m2!1svi!2s"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Bản đồ Nha Khoa Nụ Cười Xinh - 123 Nguyễn Văn Linh, Tân Phong, Quận 7, TP.HCM">
+            </iframe>
+        </div>
+        <p style="text-align: center; color: #666; margin-top: 15px; font-size: 0.95rem;">
+            📍 123 Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7, TP.HCM
+        </p>
+        <div class="map-actions">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=123+Nguyễn+Văn+Linh,+Tân+Phong,+Quận+7,+TP.HCM" 
+               target="_blank" 
+               class="map-btn">
+                🗺️ Chỉ đường với Google Maps
+            </a>
+            <a href="https://www.google.com/maps/place/123+Nguyễn+Văn+Linh,+Tân+Phong,+Quận+7,+TP.HCM" 
+               target="_blank" 
+               class="map-btn">
+                📍 Xem trên Google Maps
+            </a>
+        </div>
+
+        <!-- Directions -->
+        <div class="directions-section">
+            <h2 class="section-title">Hướng Dẫn Đường Đi</h2>
+            
+            <div class="direction-tabs">
+                <div class="direction-tab active" onclick="showDirection('car', this)">
+                    🚗 Xe máy/Ô tô
+                </div>
+                <div class="direction-tab" onclick="showDirection('bus', this)">
+                    🚌 Xe buýt
+                </div>
+                <div class="direction-tab" onclick="showDirection('metro', this)">
+                    🚇 Tàu điện ngầm
+                </div>
+            </div>
+
+            <!-- Xe máy/Ô tô -->
+            <div id="car-direction" class="direction-content active">
+                <div class="direction-detail">
+                    <h4>🚗 Di chuyển bằng xe máy/ô tô</h4>
+                    <p><strong>Từ trung tâm TP.HCM:</strong></p>
+                    <div class="direction-route">
+                        <ol>
+                            <li>Từ Quận 1: Đi theo đường Nguyễn Huệ → Lê Lợi → Nguyễn Văn Cừ → Võ Văn Kiệt → Nguyễn Văn Linh (khoảng 12km, 25-30 phút)</li>
+                            <li>Từ Quận 3: Đi theo đường Cách Mạng Tháng 8 → Nguyễn Văn Cừ → Võ Văn Kiệt → Nguyễn Văn Linh (khoảng 10km, 20-25 phút)</li>
+                            <li>Từ Quận 5: Đi theo đường Nguyễn Trãi → Võ Văn Kiệt → Nguyễn Văn Linh (khoảng 8km, 15-20 phút)</li>
+                            <li>Từ Quận 10: Đi theo đường Lý Thái Tổ → Nguyễn Văn Cừ → Võ Văn Kiệt → Nguyễn Văn Linh (khoảng 9km, 18-22 phút)</li>
+                        </ol>
+                    </div>
+                    <p style="margin-top: 15px;"><strong>Lưu ý:</strong> Phòng khám nằm bên phải đường Nguyễn Văn Linh (hướng về Quận 7), có biển hiệu lớn màu xanh dương với logo răng. Có bãi đậu xe miễn phí cho khách hàng.</p>
+                    <div class="route-info">
+                        <div class="route-info-item">
+                            <strong>Khoảng cách</strong>
+                            <span>Từ trung tâm: 8-12km</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Thời gian</strong>
+                            <span>15-30 phút</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Bãi đậu xe</strong>
+                            <span>Có sẵn, miễn phí</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xe buýt -->
+            <div id="bus-direction" class="direction-content">
+                <div class="direction-detail">
+                    <h4>🚌 Di chuyển bằng xe buýt</h4>
+                    <p><strong>Các tuyến xe buýt đi qua phòng khám:</strong></p>
+                    <div class="direction-route">
+                        <ol>
+                            <li><strong>Tuyến 03:</strong> Bến Thành - Cộng Hòa
+                                <br>Dừng tại trạm: <strong>Nguyễn Văn Linh - Tân Phong</strong>
+                                <br>Giá vé: 6.000đ - 8.000đ | Tần suất: 10-15 phút/chuyến</li>
+                            <li><strong>Tuyến 20:</strong> Bến Thành - An Sương
+                                <br>Dừng tại trạm: <strong>Nguyễn Văn Linh - Tân Phong</strong>
+                                <br>Giá vé: 6.000đ - 8.000đ | Tần suất: 8-12 phút/chuyến</li>
+                            <li><strong>Tuyến 102:</strong> Công viên 23/9 - Khu Công nghệ cao
+                                <br>Dừng tại trạm: <strong>Nguyễn Văn Linh - Tân Phong</strong>
+                                <br>Giá vé: 6.000đ - 8.000đ | Tần suất: 12-15 phút/chuyến</li>
+                            <li><strong>Tuyến 150:</strong> Bến Thành - Cần Giờ
+                                <br>Dừng tại trạm: <strong>Nguyễn Văn Linh - Tân Phong</strong>
+                                <br>Giá vé: 8.000đ - 15.000đ | Tần suất: 15-20 phút/chuyến</li>
+                        </ol>
+                    </div>
+                    <p style="margin-top: 15px;"><strong>Hướng dẫn:</strong> Sau khi xuống tại trạm Nguyễn Văn Linh - Tân Phong, đi bộ khoảng 100m về phía Nam (hướng về Quận 7) là đến phòng khám. Phòng khám nằm bên phải đường, có biển hiệu lớn màu xanh.</p>
+                    <div class="route-info">
+                        <div class="route-info-item">
+                            <strong>Giá vé</strong>
+                            <span>6.000đ - 15.000đ</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Quãng đường đi bộ</strong>
+                            <span>Khoảng 100m</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Thời gian đi bộ</strong>
+                            <span>2-3 phút</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tàu điện ngầm -->
+            <div id="metro-direction" class="direction-content">
+                <div class="direction-detail">
+                    <h4>🚇 Di chuyển bằng tàu điện ngầm (Metro)</h4>
+                    <p><strong>Từ các ga Metro gần nhất:</strong></p>
+                    <div class="direction-route">
+                        <ol>
+                            <li><strong>Từ ga Bến Thành (Line 1):</strong>
+                                <br>→ Ra khỏi ga, đi bộ ra bến xe buýt Bến Thành
+                                <br>→ Bắt tuyến 03 hoặc 20 đến trạm Nguyễn Văn Linh - Tân Phong
+                                <br>→ Đi bộ 100m đến phòng khám
+                                <br>⏱️ Tổng thời gian: 35-45 phút</li>
+                            <li><strong>Từ ga Ba Son (Line 1):</strong>
+                                <br>→ Ra khỏi ga, đi bộ ra bến xe buýt gần nhất
+                                <br>→ Bắt tuyến 102 đến trạm Nguyễn Văn Linh - Tân Phong
+                                <br>→ Đi bộ 100m đến phòng khám
+                                <br>⏱️ Tổng thời gian: 40-50 phút</li>
+                            <li><strong>Từ ga Tân Cảng (Line 1):</strong>
+                                <br>→ Ra khỏi ga, bắt taxi hoặc xe buýt
+                                <br>→ Đi theo đường Nguyễn Văn Linh về hướng Quận 7
+                                <br>⏱️ Tổng thời gian: 20-25 phút (taxi) hoặc 30-40 phút (xe buýt)</li>
+                        </ol>
+                    </div>
+                    <p style="margin-top: 15px;"><strong>Lưu ý:</strong> Từ các ga Metro, bạn có thể chuyển sang xe buýt hoặc taxi để đến phòng khám. Taxi/Grab là phương tiện tiện lợi nhất, chi phí khoảng 50.000đ - 100.000đ tùy khoảng cách.</p>
+                    <div class="route-info">
+                        <div class="route-info-item">
+                            <strong>Ga gần nhất</strong>
+                            <span>Ga Tân Cảng (Line 1)</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Thời gian</strong>
+                            <span>20-50 phút</span>
+                        </div>
+                        <div class="route-info-item">
+                            <strong>Chi phí</strong>
+                            <span>15.000đ - 100.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p><strong>Nha Khoa Nụ Cười Xinh</strong></p>
+            <p>📍 Địa chỉ: 123 Đường Nguyễn Văn Linh, Quận 7, TP.HCM</p>
+            <p>📞 Hotline: 1900 1234 | 📧 Email: info@nhakhoa.com</p>
+            <p>🕐 Giờ làm việc: Thứ 2 - Chủ nhật: 8:00 - 20:00</p>
+            <div class="footer-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="dichvu.html">Dịch vụ</a>
+                <a href="bacsi.html">Bác sĩ</a>
+                <a href="dangky.html">Đăng ký khám</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </div>
+            <p style="margin-top: 20px;">&copy; 2024 Nha Khoa Nụ Cười Xinh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
