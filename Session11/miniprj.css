@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255,248,240);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color:#FFFFFFF2;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+header p {
+    margin: 0;
+    font-size: 35.2px;
+    color: #E76F51;
+}
+
+header nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 17.6px;
+    color: #3C2F2F;
+    font-weight: 500;
+}
+
+header .booking {
+    text-decoration: none;
+    background-color: #E76F51;
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.banner {
+    position: relative;
+}
+
+.introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.introduction h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 22.4px;
+    margin-bottom: 50px;
+}
+
+.booking-button {
+    text-decoration: none;
+    margin-left: 220.65px;
+    background-color: #E76F51;
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: #FFFFFF;
+}
+.featured-dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.featured-dish h2 {
+    color: #E76F51;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.food-list {
+    display: flex;
+    gap: 40px;
+}
+
+.food-item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0px 0px 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.food-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.food-item p, .food-item span {
+    padding-left: 20px;
+}
+
+.food-item .price {
+    color: #E76F51;
+}
+
+.food-item .description {
+    color: #666666;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    max-width: 1200px;
+}
+
+.menu h2 {
+    color: #E76F51;
+    font-size: 48px;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.food {
+    width: 280px;
+    height: 68.13999938964844px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0 #00000014;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.food:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.4);
+}
+.food p {       
+    font-weight: 600;
+    color: #3C2F2F;
+    font-size: 17.6px;
+}
+
+.food .price {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #3C2F2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .the-end {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 30px;
+    gap: 10px;
+}
+
+footer .the-end h3 {
+    margin-top: 20px;
+    color: #E76F51;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+footer .the-end p {
+    color: #FFFFFF;
+    font-size: 14.4px;
+}
+
+hr {
+    width: 70%;
+   border: none;
+   height: 1px;
+   background-color: #6b6b6b;
+   margin: 15px 0px;
+}
+footer > p {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 14.4px;
+    color: #EEEEEE;
+    padding-bottom: 20px;
+}
