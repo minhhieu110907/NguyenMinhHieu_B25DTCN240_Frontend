@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  width: 150px;          
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
