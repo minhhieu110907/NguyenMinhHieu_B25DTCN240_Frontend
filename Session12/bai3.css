@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(248,249,250);
+}
+
+header {
+    text-align: center;
+}
+
+header span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6366F11A;
+    color: #6366F1;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #212529BF;
+    font-size: 20px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+}
+
+.course-card-list {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.basic-course-card {
+    padding: 25.3px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+    padding: 50px;
+    max-width: 416px;
+}
+
+.basic-course-card:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px);
+}
+
+.basic-course-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.color {
+    color: #6366F1;
+    font-size: 40px;
+}
+
+.small {
+    font-size: 16.8px;
+    font-weight: 400;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+li {
+    list-style: none;
+    padding: 4px;
+}
+
+.option {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #6366F1;
+    border: 1px solid #0D6EFD;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.option:hover {
+    background-color: #0D6EFD;
+}
+
+.option:hover a {
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+    .course-card-list {
+        gap: 15px;
+    }
+    .basic-course-card {
+        max-width: 350px; 
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header span {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .course-card-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .basic-course-card {
+        width: 100%;
+        max-width: 90%; /
+    }
+}

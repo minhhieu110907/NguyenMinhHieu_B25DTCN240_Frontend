@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Hieu's page</title>
+    <link rel="stylesheet" href="./BTTH.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__logo">Elearning</div>
+
+            <div class="header__search">
+                <input type="text" placeholder="Tìm kiếm khóa học...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <nav class="header__nav">
+                <a href="#">Khóa học</a>
+                <a href="#">Tiến độ</a>
+                <a href="#">Hồ sơ</a>
+            </nav>
+
+            <div class="header__hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <h1 class="welcome__title">Xin chào, Bạn tôi!</h1>
+            <p class="welcome__subtitle">Chúc bạn học tập hiệu quả hôm nay</p>
+            <div class="welcome__progress">
+                <span class="welcome__progress-text">Tiến độ tổng: 68%</span>
+                <div class="welcome__progress-bar">
+                    <div class="welcome__progress-fill" style="width: 68%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Khóa học đang học</h2>
+            <div class="course-list">
+                <article class="course-card">
+                    <img src="https://picsum.photos/400/200?random=1" class="course-card__img">
+                    <div class="course-card__content">
+                        <h3 class="course-card__name">CSS Flexbox & Grid</h3>
+                        <p class="course-card__info">Hoàn thành: 85%</p>
+                        <button class="course-card__btn">Tiếp tục học</button>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="https://picsum.photos/400/200?random=2" class="course-card__img">
+                    <div class="course-card__content">
+                        <h3 class="course-card__name">JavaScript Cơ bản</h3>
+                        <p class="course-card__info">Hoàn thành: 42%</p>
+                        <button class="course-card__btn">Tiếp tục học</button>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="https://picsum.photos/400/200?random=3" class="course-card__img">
+                    <div class="course-card__content">
+                        <h3 class="course-card__name">Responsive Web Design</h3>
+                        <p class="course-card__info">Hoàn thành: 95%</p>
+                        <button class="course-card__btn">Tiếp tục học</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title section__title--blue">Khóa học gợi ý</h2>
+            <div class="course-list">
+                <article class="course-card">
+                    <img src="https://picsum.photos/400/200?random=4" class="course-card__img">
+                    <div class="course-card__content">
+                        <h3 class="course-card__name">React cho người mới</h3>
+                        <p class="course-card__info">Bắt đầu ngay hôm nay</p>
+                        <button class="course-card__btn">Xem chi tiết</button>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="https://picsum.photos/400/200?random=5" class="course-card__img">
+                    <div class="course-card__content">
+                        <h3 class="course-card__name">Python Cơ bản</h3>
+                        <p class="course-card__info">Phù hợp beginner</p>
+                        <button class="course-card__btn">Xem chi tiết</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
