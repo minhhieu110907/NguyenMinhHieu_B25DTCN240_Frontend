@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p {
+    display: In;
+    color: rgb(215,232,237);
+    text-align: center;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 14px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+header nav a:hover {
+    color: rgb(3, 3, 3);
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(13,110,253);
+    color: white;
+    padding: 50px;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.banner p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.banner a {
+    margin: 20px auto;
+    padding: 15px;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.banner a:hover {
+    transform: translateY(-13px);
+    box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.introduction h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+i {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    transform: scale(2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.form h2 {
+    font-size: 35px;
+}
+
+input {
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgb(25,135,84);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
