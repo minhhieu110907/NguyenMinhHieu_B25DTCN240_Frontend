@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Hieu's page</title>
+    <link rel="stylesheet" href="./bai8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">RK<span>EI</span>Edu</div>
+            <nav class="nav-links">
+                <a href="#">Trang chủ</a>
+                <a href="#">Khóa học</a>
+                <a href="#" class="active">Khóa học của tôi</a>
+                <a href="#">Liên hệ</a>
+            </nav>
+            <div class="user-info">
+                <div class="avatar"></div>
+                <span>Nguyễn Văn A</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Khóa Học Của Tôi</h1>
+            <p>Tiếp tục hành trình học tập và phát triển kỹ năng của bạn</p>
+        </div>
+    </section>
+
+    <section class="tabs-section">
+        <div class="container tabs-flex">
+            <button class="tab-btn active">Tất cả khóa học (4)</button>
+            <button class="tab-btn">Đang học (2)</button>
+            <button class="tab-btn">Hoàn thành (1)</button>
+            <button class="tab-btn">Đã lưu (1)</button>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Thống Kê Học Tập</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="icon">📚</span>
+                    <div class="stat-num">4</div>
+                    <div class="stat-text">Tổng khóa học</div>
+                </div>
+                <div class="stat-card">
+                    <span class="icon">🎯</span>
+                    <div class="stat-num">2</div>
+                    <div class="stat-text">Đang học</div>
+                </div>
+                <div class="stat-card">
+                    <span class="icon">✅</span>
+                    <div class="stat-num">1</div>
+                    <div class="stat-text">Hoàn thành</div>
+                </div>
+                <div class="stat-card">
+                    <span class="icon">⏰</span>
+                    <div class="stat-num">43</div>
+                    <div class="stat-text">Giờ học</div>
+                </div>
+                <div class="stat-card">
+                    <span class="icon">📜</span>
+                    <div class="stat-num">1</div>
+                    <div class="stat-text">Chứng chỉ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container courses-grid">
+            <div class="course-card">
+                <div class="course-img learning">
+                    <span class="badge">Đang học</span>
+                </div>
+                <div class="course-body">
+                    <span class="category">Thiết kế</span>
+                    <h3>UI/UX Design Chuyên Nghiệp</h3>
+                    <p class="instructor">Giảng viên: Trần Thị B</p>
+                    <div class="progress-info">
+                        <span>Tiến độ học tập</span>
+                        <span class="percent">20%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width: 20%"></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn-primary">Tiếp tục học</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-img done">
+                    <span class="badge">Hoàn thành</span>
+                </div>
+                <div class="course-body">
+                    <span class="category">Marketing</span>
+                    <h3>Digital Marketing Toàn Diện</h3>
+                    <p class="instructor">Giảng viên: Lê Văn C</p>
+                    <div class="progress-info">
+                        <span>Hoàn thành</span>
+                        <span class="percent">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width: 100%"></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn-outline">Xem lại</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-img saved">
+                    <span class="badge">Đã lưu</span>
+                </div>
+                <div class="course-body">
+                    <span class="category">AI & Data</span>
+                    <h3>Machine Learning Cơ Bản</h3>
+                    <p class="instructor">Giảng viên: Phạm Thị D</p>
+                    <div class="price">2,799,000đ <small>4,000,000đ</small></div>
+                    <div class="course-footer">
+                        <button class="btn-primary">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-section">
+        <form class="login-form">
+            <h2>Đăng nhập</h2>
+            <p class="subtitle">Đăng nhập để sử dụng hệ thống e-learning</p>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Nhập địa chỉ email">
+            </div>
+
+            <div class="input-group">
+                <label>Mật khẩu</label>
+                <input type="password" placeholder="Nhập mật khẩu">
+            </div>
+
+            <div class="form-row">
+                <label><input type="checkbox"> Ghi nhớ đăng nhập</label>
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+
+            <button type="submit" class="btn-login">Đăng nhập</button>
+            <p class="footer-text">Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+        </form>
+    </section>
+
+</body>
+
+</html>
